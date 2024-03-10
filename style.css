@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Common Styling */
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal:hsl(24, 5%, 18%);
+
+}
+
+body{
+    background-color:var(--Eggshell);
+    padding:0px;
+    margin:0px;
+    color:var(--WengeBrown);
+    font-family: "outfit",sans-serif;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    
+}
+h1,h2{
+    font-family: "Young Serif",serif;
+    font-weight: 400;
+}
+h1{
+    color: var(--DarkCharcoal);
+    font-size: 2.8rem;
+}
+h2{
+    color: var(--Nutmeg);
+    margin-bottom: 1rem;
+}
+
+
+/* Container */
+.container{
+    width:60%;
+    height: auto;
+    margin:5%;
+    background:var(--White);
+    border-radius: 16px;
+}
+
+.img-container {
+    display: grid;
+    place-content: center;
+}
+.img-container img{
+    margin:40px 10px 0px 40px;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* title-Container */
+.title-container{
+margin-left: 30px;
+}
+.desc{
+    font-size: 16px;
+}
+/* Preparation container */
+.preparation-time{
+    background-color: var(--RoseWhite);
+    margin:0px 30px 0px 30px;
+    padding: 10px;
+}
+
+.preparation-time h3{
+    color: var(--DarkRaspberry);
+}
+.preparation-time li{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+/* ingredients container */
+.ingredients{
+    margin:0px 30px 0px 30px;
+}
+.ingredients li{
+    padding: 5px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+/* Instructions container */
+.instructions{
+    margin:0px 30px 0px 30px;
+}
+
+.instructions li{
+    font-size: 0.9rem;
+    padding:5px;
+}
+
+.ingredients ul li,
+.instructions ol li {
+    margin-bottom: 5px; 
+}
+
+/* Nutrition container */
+.nutrition{
+    margin:0px 30px 0px 30px;
+    
+}
+
+.nutrition table {
+    border-collapse: collapse; 
+    width: 100%; 
+    padding: 20px;
+}
+
+.nutrition table td {
+    border-bottom: 1px solid #ccc; 
+    padding: 10px; 
+    font-size:0.9rem;
+    font-weight:500 ;
+}
+.nutrition table tr:last-child td {
+    border-bottom: none; 
+}
+.Calories{
+    color:var(--Nutmeg);
+    font-weight: 700;
+}
+
+/* footer Styling */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+
+@media screen and (max-width:400px){
+    body{
+        width:100%;
+    }
+    h1{
+        color: var(--DarkCharcoal);
+        font-size: 1.8rem;
+    }
+    h2{
+        color: var(--Nutmeg);
+        margin-bottom: 0.5rem;
+    }
+
+    .container{
+        width:100%;
+        margin: 0px;
+        border-radius: 0px;
+    }
+    .img-container{
+        width: 400px;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 0px;
+    }
+    .img-container img{
+        width:100%;
+        padding:0px;
+        border-radius: 0px;
+        margin:0px;
+        object-fit: cover;
+    }
+    .title-container{
+        width: 300px;
+        margin-left: 30px;
+        }
+        .desc{
+            width:350px;
+            font-size: 16px;
+        }
+        .preparation-time{
+            width:300px;
+            border-radius: 10px;
+        }
+        .preparation-time li{
+            padding: 5px;
+    margin-bottom: 5px;
+    font-size: .9rem;
+        }
+
+        .ingredients{
+            width: 300px;
+        }
+        .instructions{
+            width: 275px;
+        }
+        .nutrition{
+            width:400px;
+        }
+        .nutrition table {
+            border-collapse: collapse; 
+            width: 80%; 
+            padding: 20px;
+        }
+.nutrition p{
+    font-size: .6rem;
+}
+
+        .attribution{
+            font-size: 8px;
+            text-align: center;
+        }
+}
